@@ -4,10 +4,8 @@
 
 [resource]
 script = ExtResource("1_qlspv")
-major = 0
 minor = 1
 patch = 1
-fix = ""
 status = "pre-alpha"
 nickname = "GoGoGo!"
 metadata/_custom_type_script = "uid://c0wnjvdj830qf"

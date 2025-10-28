@@ -15,9 +15,17 @@ config/version="0.1.1"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://assets/icons/system/icon.svg"
 
+[autoload]
+
+Log="*res://addons/logerr/autoload/logger.gd"
+
 [debug]
 
 gdscript/warnings/return_value_discarded=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/logerr/plugin.cfg")
 
 [file_customization]
 
