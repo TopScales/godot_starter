@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://daffjtdshg0lb" path="res://scenes/game/game.gd" id="1_8t8cc"]
 [ext_resource type="Resource" uid="uid://ks8d1iw813k7" path="res://version.tres" id="2_kelw5"]
 [ext_resource type="Script" uid="uid://e2mb5qsiryod" path="res://scenes/game/settings.gd" id="2_xkch1"]
-[ext_resource type="Script" uid="uid://f2qkfa4m7hya" path="res://addons/true_data/classes/saver.gd" id="3_6hkd7"]
+[ext_resource type="Script" uid="uid://rhfprp7p3rk" path="res://scenes/game/saver.gd" id="4_kelw5"]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_8t8cc")
@@ -15,5 +15,5 @@ script = ExtResource("2_xkch1")
 metadata/_custom_type_script = "uid://e2mb5qsiryod"
 
 [node name="Saver" type="Node" parent="."]
-script = ExtResource("3_6hkd7")
-metadata/_custom_type_script = "uid://f2qkfa4m7hya"
+script = ExtResource("4_kelw5")
+metadata/_custom_type_script = "uid://rhfprp7p3rk"

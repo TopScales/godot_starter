@@ -3,7 +3,7 @@
 ##
 ## Long description.
 ##
-@icon("res://assets/icons/classes/Settings.svg")
+@icon("res://assets/icons/classes/settings.svg")
 class_name Settings
 extends Node
 

@@ -18,6 +18,9 @@ config/icon="res://assets/icons/system/icon.svg"
 [autoload]
 
 Log="*res://addons/logerr/autoload/logger.gd"
+Err="*res://addons/logerr/autoload/err.gd"
+Benchmark="*res://addons/logerr/autoload/benchmark.gd"
+Game="*res://scenes/game/game.tscn"
 
 [debug]
 

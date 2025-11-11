@@ -1,6 +1,6 @@
 ##
 @tool
-@icon("res://assets/icons/classes/Game.svg")
+@icon("res://assets/icons/classes/game.svg")
 extends Node
 
 @export var version: Version
