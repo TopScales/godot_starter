@@ -38,6 +38,8 @@ To start working on this project, go through the next steps:
 
 To keep the project organized, different types of files are stored in specific folders. The project follows the next file structure.
 
+>📝 **NOTE:** Choose a file structure that works for your project and enforce the usage of such structure throughout development.
+
 ```{.yaml .no-copy}
 root/
 │
@@ -48,7 +50,7 @@ root/
 │   │   └── system/     # Game system icons
 │   ├── meshes/         # Meshes of 3D objects
 │   ├── materials/      # All materials included those of 3D objects
-│   └── textures/       # Textures and images
+│   ├── textures/       # Textures and images
 │   └── sounds/         # Sounds
 ├── data/               # Game data
 ├── docs/               # Documentation folder
@@ -66,17 +68,21 @@ root/
 
 ### Scenes and Assets
 
-Scenes and assets shouldn't be mixed in the same folders. They have each one their own folders. This approach makes it easy to reuse the same assets in multiple scene and avoids file cluttering per folder.
+Scenes and assets shouldn't be mixed in the same folders. They have each one their own folders. This approach makes it easy to reuse the same assets in multiple scenes and avoids file cluttering per folder.
 
 ### Documentation
 
-Inside the `docs` folder, there's all the documentation related to the game and its development. Check the file for instruction on how to generate docs
+Inside the `docs` folder, there's all the documentation related to the game and its development. Check the [index file](docs/index.md) for instruction on how to generate the documentation locally or where to check it online.
 
 ## 🤝 Guidelines
 
-- File names
-- Code style
-- Test units
+Please make sure to follow these guidelines while working on the project. It's important to have conventions on how files are named and a code style for all languages used during development.
+
+Use *snake_case* names for all files and folders. Make sure to never use whitespaces in file names. This makes files names clear, with words being separated by underscores. In addition, it's cross platform friendly by avoiding case conflicts that could more easily occur when using capitalized names.
+
+For GDScript, use the official [style guide](https://docs.godotengine.org/en/latest/tutorials/scripting/gdscript/gdscript_styleguide.html) convention. For C++ modules and libraries, use the same [style](https://contributing.godotengine.org/en/latest/engine/guidelines/code_style.html) as Godot's source code. This, of course, doesn't apply to third-party libraries which could have their own code style.
+
+During development, constantly test the modules you're working on to ensure the quality of the game. When developing GDScript modules, always use [GUT](https://gut.readthedocs.io/en/v9.5.0/) unit tests. For C++ modules, make [test units](https://docs.godotengine.org/en/stable/engine_details/architecture/unit_testing.html) as explained in Godot's documentation.
 
 ## 🛎️ Support
 

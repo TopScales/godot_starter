@@ -28,7 +28,7 @@ gdscript/warnings/return_value_discarded=1
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/logerr/plugin.cfg")
+enabled=PackedStringArray("res://addons/gut/plugin.cfg", "res://addons/logerr/plugin.cfg")
 
 [file_customization]
 
@@ -36,6 +36,7 @@ folder_colors={
 "res://addons/": "gray",
 "res://assets/": "yellow",
 "res://data/": "green",
+"res://docs/": "blue",
 "res://scenes/": "orange",
 "res://scripts/": "purple",
 "res://tests/": "pink",
