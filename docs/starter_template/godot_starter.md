@@ -1,4 +1,4 @@
-# Godot Starter Template
+# Starter Template
 
 Use this project as a template for your own Godot game. In the template [repository](https://github.com/TopScales/godot_starter), at the top, you will find the option to create a new repository using it as a template (see image below). Click the green button, select the `Create a new repository` options, and fill the required information.
 
