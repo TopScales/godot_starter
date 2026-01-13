@@ -16,7 +16,7 @@ A brief description of your game. Write a short paragraph summarizing the core c
   <img src="assets/logo/logo.png" />
 </p>
 
-*A one-sentence presentation of your game, optionally relating to the image above.*
+*A one-sentence tagline used as presentation of your game, optionally relating to the image above.*
 
 ## 🛠️ Getting Started
 
