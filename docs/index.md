@@ -28,17 +28,17 @@ To render this documentation locally, install MkDocs and the Material for MkDocs
 #### Installation Steps
 
 1. It is preferred to install Material framework in a virtual environment:
-    ```bash
+    ```powershell
     python -m venv venv
     .\venv\Scripts\activate.bat
     ```
 2. Install the Material for MkDocs theme, and plugins:
-    ```bash
+    ```powershell
     pip install mkdocs-material
     pip install mkdocs-awesome-nav
     ```
 3. To view the documentation locally, navigate to the project root (where `mkdocs.yml` is located) and run:
-   ```bash
+   ```powershell
    mkdocs serve
    ```
 
