@@ -6,7 +6,9 @@
 
 >📝 NOTE: Replace the links below with badges relevant to your project. You can safely remove the links if you prefer not to use badges.
 
-<p align="center"> <!-- Example badges --> <img src="https://img.shields.io/badge/Godot-4.x-blue" /> <img src="https://img.shields.io/github/license/[user]/[repo]" /> <img src="https://img.shields.io/github/actions/workflow/status/[user]/[repo]/build.yml?label=Build" /> </p>
+[![Godot 4.x](https://img.shields.io/badge/Godot-4.x-blue?logo=godotengine)](https://godotengine.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/[user]/[repo]/static_checks.yml)](https://github.com/TopScales/star_adventure/actions)
 
 A brief description of your game. Write a short paragraph summarizing the core concept and what makes your game unique. Avoid using bullet points here.
 
@@ -16,7 +18,7 @@ A brief description of your game. Write a short paragraph summarizing the core c
   <img src="assets/logo/logo.png" />
 </p>
 
-*A one-sentence presentation of your game, optionally relating to the image above.*
+*A one-sentence tagline used as presentation of your game, optionally relating to the image above.*
 
 ## 🛠️ Getting Started
 
@@ -63,6 +65,7 @@ root/
 ├── misc/               # Miscellaneous files (e.g., VSCode-specific files)
 ├── scenes/             # Game scenes and scripts
 ├── tests/              # Scenes and scripts for testing various modules
+├── CREDITS             # Acknowledge to collaborators and assets used
 ├── LICENSE             # License file
 ├── mkdocs.yml          # MkDocs configuration
 ├── project.godot       # Godot project file
@@ -109,6 +112,6 @@ For any question related to the project contact the corresponding area manager.
 
 ## 🪪 License
 
->📝 **NOTE:** AAdd the license that best fits your project. If this is a private project, remove the [LICENSE](LICENSE) file from the root directory.
+>📝 **NOTE:** Add the license that best fits your project. If this is a private project, remove the [LICENSE](LICENSE) file from the root directory.
 
 Distributed under the [MIT license](https://opensource.org/license/MIT).
