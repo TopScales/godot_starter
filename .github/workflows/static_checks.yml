@@ -1,9 +1,13 @@
 name: 📊 Static Checks
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
+    paths:
+      - "scenes/*.gd"
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
+    paths:
+      - "scenes/*.gd"
 
 jobs:
   static-checks:

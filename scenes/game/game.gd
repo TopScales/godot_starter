@@ -5,6 +5,8 @@ extends Node
 
 const LOADING_SCREEN_PATH: String = "res://scenes/game/loading_screen.tscn"
 
+const _GAME: StringName = &"Game"
+
 @export var version: Version
 
 var standalone_scene: bool = true
@@ -29,11 +31,11 @@ func change_main_scene(
 		if Err.success_err(get_tree().change_scene_to_file(LOADING_SCREEN_PATH), "Can't open loading screen.", "Game"):
 			await get_tree().scene_changed
 			var err: int = ResourceLoader.load_threaded_request(path, "PackedScene", true)
-			if Err.success_err(err, "Error while trying to load scene in the background.", "Game"):
+			if Err.success_err(err, "Error while trying to load scene in the background.", _GAME):
 				_loading_path = path
 				_initial_data = initial_data
 				set_process(true)
-	elif Err.success_err(get_tree().change_scene_to_file(path), "Can't open main scene.", "Game"):
+	elif Err.success_err(get_tree().change_scene_to_file(path), "Can't open main scene.", _GAME):
 		await get_tree().scene_changed
 		__initialize_scene(initial_data)
 
@@ -57,7 +59,7 @@ func _process(_delta: float) -> void:
 
 	match status:
 		ResourceLoader.THREAD_LOAD_INVALID_RESOURCE:
-			Log.error("Background loading tried to load an invalid scene.")
+			Log.error("Background loading tried to load an invalid scene.", _GAME)
 			_loading_path = ""
 			_initial_data.clear()
 			set_process(false)
@@ -65,14 +67,14 @@ func _process(_delta: float) -> void:
 			var loading_screen: LoadingScreen = get_tree().current_scene
 			loading_screen.set_progress(progress[0])
 		ResourceLoader.THREAD_LOAD_FAILED:
-			Log.error("Background loading failed to load the scene.")
+			Log.error("Background loading failed to load the scene.", _GAME)
 			_loading_path = ""
 			_initial_data.clear()
 			set_process(false)
 		ResourceLoader.THREAD_LOAD_LOADED:
 			set_process(false)
 			var scene: PackedScene = ResourceLoader.load_threaded_get(_loading_path)
-			if Err.success_err(get_tree().change_scene_to_packed(scene), "Can't change main scene."):
+			if Err.success_err(get_tree().change_scene_to_packed(scene), "Can't change main scene.", _GAME):
 				await get_tree().scene_changed
 				__initialize_scene(_initial_data)
 			_loading_path = ""
